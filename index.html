@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>
+	Game stores
+</title>
+</head>
+	<link href="css/main.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<body ng-app = "gamesApp">
+	<h2> Welcome to our GAME KINGDOM, here are the hottest games in 2017 </h2>
+	<div ng-controller = "MainController">
+		<div ng-repeat = "game in games">
+			<game-info info = "game"> </game-info>
+			<div style = "margin-left:75px;"><install-game></install-game></div>
+		</div>
+	</div>
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+
+    <!-- Directives -->
+    <script src="js/directives/gameInfo.js"></script>
+	<script src ="js/directives/installGame.js"></script>
+	
+</div>
+</body>
+</html>
